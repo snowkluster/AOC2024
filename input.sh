@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# doesn't work need to be logged in / get the cookie
+# use python3 script
 date_total=$(date +%d/%Y)
 
 day=$(echo "$date_total" | cut -d '/' -f1)
