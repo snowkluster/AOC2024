@@ -54,7 +54,13 @@ func day1s2(data []byte) (find int){
   }
   sort.Ints(arr1)
   sort.Ints(arr2)
-  // Working on Second Star
+  freq := make(map[int]int)
+  for _, num := range arr2 {
+    freq[num]++
+  }
+  for _, num := range arr1 {
+		find += freq[num] * num
+	}
   return
 }
 
